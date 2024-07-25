@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Izuchukwu Promise"/>
+    <meta name="description" content="Portfolio page showcasing skills, 
+    services, and brand, enhancing online presence, credibility, and client engagement developed using HTML, CSS and JavaScript"/>
+    <meta name=”title” content="Portfolio"/>
+    <meta name="language" content="english"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="format-detection" content="telephone=yes"/>
+    <meta property = "og:title" content="Portfolio">
+    <meta property = "og:type" content="website">
+    <meta property = "og:image" content="ip-logo-blue.svg">
+    <meta property = "og:url" content="ipWebcrafts.com">
+    <meta property = "og:description" content="Portfolio page showcasing skills, services, 
+    and brand, enhancing online presence, credibility, and client engagement">
+    <meta property = "og:locale" content="en_uk">
+    <meta property = "og:site_name" content="ipWebcrafts">
+    <title>ipWebcrafts</title>
+    <link rel="icon" href="./assets/ip-logo-blue.svg" >
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="desktop-nav">
+        <a href="#" class="logo">
+          <img src="./assets/IP-LOGO.svg" alt="" class="ip-logo">
+        </a>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <a href="#" class="logo">
+          <img src="./assets/IP-LOGO.svg" alt="" class="ip-logo">
+        </a>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links hidden">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section id="profile">
+      <div class="wrapper">
+        <div class="section__pic-container">
+          <img class="ip_img"  src="./assets/Ip-img-circ.png" alt="Izuchukwu Promise profile picture" />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I am</p>
+          <h1 class="title">Izuchukwu Promise</h1>
+          <p class="section__text__p2" data-typing-effect ></p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./assets/Izuchukw-Promise-dev-Resume.pdf')"
+            >
+              Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+              Contact Info
+            </button>
+          </div>
+          <div id="socials_container">
+            <div class="socials_wrapper">
+              <div>
+                <img
+                src="./assets/linkedin.png"
+                alt="My LinkedIn profile"
+                class="icon"
+                onclick="location.href='https:www.linkedin.com/in/izuchukwu-promise-nwoye-08811328b'"
+              />
+              </div>
+              <div>
+                <img
+                src="./assets/github.png"
+                alt="My Github profile"
+                class="icon"
+                onclick="location.href='https://github.com/devPromize'"
+              />
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="section_header">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+      </div>
+      <div class="wrapper">
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img 
+              src="./assets/ip-img-02-blur.png"
+              alt="Profile picture"
+              class="about-pic  hidden"
+            />
+          </div>
+        </div>
+        <div class="about-details-container ">
+          <div class="about-containers">
+            <div class="details-container hidden">
+              <img
+              src="./assets/experience.png"
+              alt="Experience icon"
+              class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1+ years <br />Frontend Development</p>
+            </div>
+            <div class="details-container hidden">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Certifications</h3>
+              <p>
+                Coursera Meta JavaScript Course
+              <br/>
+              <a class="js-cert" href="https://coursera.org/share/449451f1df0f447c8dfe764837c9be67"
+              target="_blank">View Certificate</a>
+              </p>
+            </div>
+          </div>
+            <div class="text-container hidden">
+              <p>
+                I am a 
+                diligent front-end developer 
+                passionate about crafting 
+                user-friendly websites that 
+                drive brand growth and business development. 
+                I am committed to continuously learning and 
+                keeping up with the latest trends and 
+                technologies in web development to 
+                effectively support brands and 
+                business owners in achieving their strategic objectives.
+              </p>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section id="experience">
+      <div class="section_header">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+      </div>
+      <div class="experience-details-container">
+        <div class="experience-about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Web Development</h2>
+            <div class="article-container">
+              <article  class=" hidden">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article class=" hidden">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article class=" hidden">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bootstrap</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article class=" hidden">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article class=" hidden">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article class=" hidden">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SEO</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Web Development</h2>
+            <div class="article-container">
+              <article class=" hidden"> 
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article class=" hidden">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article class=" hidden">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Github</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article class=" hidden">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="section_header">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+      </div>
+      <div class="experience-details-container">
+        <div class="project-about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Mv_schools.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title ">Maryvic Schools</h2>
+              <div class="project_description">
+                <p>
+                  Crafted to improve the school's online visibility, community engagement and Information accessibility
+                </p>
+                <h5>
+                  HTML | CSS | JavaScript | JQuery | Bootstrap
+                </h5>
+              </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/devPromize'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/devPromize'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Weather-app.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title ">Weather App</h2>
+            <div class="project_description">
+              <p>
+                Provides Weather updates with hourly forecasts for informed outdoor and travel planning
+              </p>
+              <h5>
+                HTML | CSS | JavaScript | Vite | API 
+              </h5>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/devPromize'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/devPromize'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/ip-craft-widebluebg.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title ">ipWebcrafts</h2>
+            <div class="project_description">
+              <p>
+                Portfolio page showcasing skills, services, and brand, enhancing online presence, credibility, and client engagement
+              </p>
+              <h5>
+                HTML | CSS | JavaScript 
+              </h5>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/devPromize'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/devPromize'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="section_header">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+      </div>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="email-icon"
+          />
+          <p><a href="mailto:Izuchukwupromise01@gmail.com">izuchukwupromise01@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon"
+          />
+          <p><a href="https:www.linkedin.com/in/izuchukwu-promise-nwoye-08811328b
+            ">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav id="footer-nav">
+        <div class="footer-nav-links-container">
+          <ul id="footer-nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <p>Copyright &#169; 2024 Izuchukwu Promise.All Rights Reserved.</p>
+    </footer>
+    <a href="https://wa.me/2348102586390?text=Hello%2C%20I%20am%20interested%20in%20your%20services&#46" target="_blank" class="whatsapp-anchor">
+      <img class="whatsapp" src="./assets/whatsapp-svg.svg" alt="">
+    </a>
+    <script src="script.js"></script>
+  </body>
+</html>
